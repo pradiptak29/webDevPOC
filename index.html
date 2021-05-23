@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َAnimated Login Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<!-- <form class="box" action="FCB.html" method="post" name="loginForm" onsubmit="return login()"> -->
+<form class="box" action="FCB.html">
+  <h1>Login</h1>
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Login">
+</form>
+  </body>
+</html>
+
+
+
+
+
+<script>
+	function login()
+	{
+		var username = document.forms['loginForm']['username'].value
+		var pass = document.forms['loginForm']['password'].value
+		
+		if(username === '' || pass === ''){
+			return false
+		} else return true
+	}
+</script>
